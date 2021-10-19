@@ -1,0 +1,27 @@
+.collapse-section {
+    height: calc(100vh - 96px);
+    border-right: 3px dotted black;
+    img {
+      width: 40px;
+    }
+}
+
+.collapse-btn {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-image: url("~/assets/expandIconImage.png");
+  background-size: cover;
+  &.open {
+      background-image: url("~/assets/collapseIconImage.png");
+  }
+}
+
+/* On screens that are 576px or less, set the background color to blue */
+@media screen and (max-width: 576px) {
+
+  .d-flex .collapse-section {
+    display: none !important;
+  }
+}

@@ -1,0 +1,8 @@
+.info-item {
+    background-color: cadetblue;
+    border-radius: 10px;
+    width: 20%;
+    &.column {
+        width: 100%;
+    }
+  }

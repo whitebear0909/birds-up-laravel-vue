@@ -1,0 +1,29 @@
+.sidebar {
+    width: 200px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-left: -200px;
+    &.open {
+        margin-left: 0px;
+    }
+}
+
+.main-content {
+    transition: 0.5s;
+    max-width: calc(100vw - 276px);
+    &.open {
+        max-width: calc(100vw - 76px);
+    }
+}
+
+/* On screens that are 576px or less, set the background color to blue */
+@media screen and (max-width: 576px) {
+
+    .sidebar {
+      width: 100%;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+}
